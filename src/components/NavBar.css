@@ -1,0 +1,46 @@
+nav {
+    /* Fixes the position to the top of the viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #393939;
+
+    padding: 1rem 2rem;
+
+    box-shadow: inset 0 -1px 0 #222;
+}
+
+nav ul {
+    /* Remove default list styling */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    /* Use flexbox for horizontal layout */
+    display: flex;
+
+    /* Space between items of the list */
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    transition: filter 0.25s;
+}
+
+nav a:hover {
+    color: #d87f13;
+    filter: drop-shadow(0 0 2em #d87f13);
+}
+
+nav a.icon {
+    width: 24px;
+  height: 24px;
+  /* display: inline-block; */
+}
