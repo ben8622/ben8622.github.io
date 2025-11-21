@@ -1,7 +1,6 @@
 import { useParams } from "react-router"
 import  {posts, postsRecord} from "../posts/postUtils"
 import Markdown from 'react-markdown'
-import { Navigate } from "react-router"
 import NotFound from "./NotFound"
 
 function BlogPost() {
