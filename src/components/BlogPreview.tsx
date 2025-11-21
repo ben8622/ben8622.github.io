@@ -2,7 +2,7 @@ function BlogPreview({title, publishedOn, slug, preview}: {title?: string, publi
     return (
         <div>
             <h2>
-                <a href={`/blogs/${slug}`}>{title || slug}</a>
+                <a href={`/#/blogs/${slug}`}>{title || slug}</a>
             </h2>
             <p><em>Published on: {publishedOn || "Unknown date"}</em></p>
             <p>{preview}</p> 
