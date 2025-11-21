@@ -1,8 +1,22 @@
+import BlogPreview from '../components/BlogPreview';
+import {posts} from '../posts/postUtils';
+
 function Blogs() {
     return (
         <div>
-            <h1>Blogs Page</h1>
-            <p>Welcome to the Blogs Page!</p>
+            <h1>Articles</h1>
+            {
+                posts.map(post => {
+                    return (
+                        <BlogPreview
+                            title={post.metadata.title}
+                            publishedOn={post.metadata.publishedOn}
+                            slug={post.slug}
+                            key={post.slug}
+                        />
+                    )
+                })
+            }
         </div>
     )
 }
