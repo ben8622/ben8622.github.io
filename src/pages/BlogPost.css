@@ -1,0 +1,8 @@
+.blog-post-container {
+    text-align: left;
+    padding: 2rem;
+}
+
+.tags-container {
+    display: flex;
+}
