@@ -5,11 +5,10 @@ function NavBar() {
         <nav>
             <ul>
                 <li>
-                    <a href="/" >
+                    <a href="/#/" >
                         <SwordSvg/>
                     </a>
                 </li>
-                <li><a href="/#/">Home</a></li>
                 <li><a href="/#/blogs">Blogs</a></li>
             </ul>
         </nav>
