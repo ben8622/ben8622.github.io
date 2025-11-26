@@ -1,3 +1,8 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #d87f13;
+  --background-color: #030022;
+}
 #root {
   margin: 0 auto;
   padding: 2rem;
@@ -5,16 +10,21 @@
   /* Body of page takes up entire available space */
   height: 100vh;
   width: 100vw;
+
+  /* Define defualt color of text across site */
+  color: var(--primary-color);
+  /* Define default color of background across site */
+  background-color: var(--background-color);  
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
     font-weight: 600;
     padding: 0.5rem 0;
     transition: filter 0.25s;
 }
 a:hover {
-    color: #d87f13;
-    filter: drop-shadow(0 0 2em #d87f13);
+    color: var(--secondary-color);
+    filter: drop-shadow(0 0 2em var(--secondary-color));
 }

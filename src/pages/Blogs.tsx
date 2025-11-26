@@ -4,7 +4,7 @@ import {posts} from '../posts/postUtils';
 function Blogs() {
     return (
         <div>
-            <h1>Articles</h1>
+            <h1>Blogs</h1>
             {
                 posts.map(post => {
                     return (
