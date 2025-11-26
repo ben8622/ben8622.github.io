@@ -1,7 +1,8 @@
 :root {
   --primary-color: white;
   --secondary-color: #d87f13;
-  --background-color: #030022;
+  --background-color: #25233d;
+  --foreground-color: #0d0119;
 }
 #root {
   margin: 0 auto;
@@ -27,4 +28,12 @@ a {
 a:hover {
     color: var(--secondary-color);
     filter: drop-shadow(0 0 2em var(--secondary-color));
+}
+button {
+  background-color: var(--foreground-color);
+}
+button:hover {
+    color: var(--secondary-color);
+    filter: drop-shadow(0 0 2em var(--secondary-color));
+    outline: none;
 }

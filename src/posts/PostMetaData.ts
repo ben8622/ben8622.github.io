@@ -4,4 +4,5 @@ export type PostMetaData = {
     publishedOn?: string
     modifiedOn?: string[]
     tags?: string[]
+    draft?: boolean
 }

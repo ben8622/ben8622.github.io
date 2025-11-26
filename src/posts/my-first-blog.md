@@ -1,6 +1,7 @@
 ---
 title: "My first blog!"
 publishedOn: "11-21-25"
+draft: false
 tags:
     - css
     - tech
