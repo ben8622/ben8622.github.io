@@ -5,8 +5,7 @@ const BASE_URL = env.PLAYWRIGHT_BASE_URL || 'http://localhost:5173';
 
 test('Can navigate to a blog post', async ({ page }) => {
     // init at home page
-    await page.goto('http://localhost:5173/');
-
+    await page.goto(BASE_URL)
     // use nav bar to get to blogs page
     await page.getByRole('link', { name: 'Blogs' }).click();
     // validate we are on blogs page
