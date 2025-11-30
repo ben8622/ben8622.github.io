@@ -3,7 +3,7 @@ import BlogPreview from '../components/BlogPreview';
 import {posts} from '../posts/postUtils';
 
 function Blogs() {
-    const [previewDrafts, setPreviewDrafts] = useState(true); 
+    const [previewDrafts, setPreviewDrafts] = useState(false); 
 
     const draftsToggleButtonOnClickHandler = () => {
         setPreviewDrafts(!previewDrafts);
@@ -16,7 +16,7 @@ function Blogs() {
         <div>
             <h1>Blogs</h1>
             {isLocalHost && 
-                <button onClick={draftsToggleButtonOnClickHandler}>
+                <button data-testid='preview-drafts' onClick={draftsToggleButtonOnClickHandler}>
                     {previewDrafts ? 'Hide Drafts' : 'Preview Drafts'}
                 </button>}
             {
@@ -31,6 +31,7 @@ function Blogs() {
                             title={post.metadata.title}
                             publishedOn={post.metadata.publishedOn}
                             slug={post.slug}
+                            draft={post.metadata.draft}
                             key={post.slug}
                         />
                     )

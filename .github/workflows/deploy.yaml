@@ -64,6 +64,8 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+      - name: Define env variables
+        run: export CI=true
       - name: Run Playwright tests
         run: npm run component-tests:ci
       - uses: actions/upload-artifact@v4
