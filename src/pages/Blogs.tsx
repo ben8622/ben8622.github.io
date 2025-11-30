@@ -21,7 +21,6 @@ function Blogs() {
                 </button>}
             {
                 posts.filter(post => {
-                    console.log(`Evaluating post ${post.slug} for previewDrafts=${previewDrafts} with draft=${post.metadata.draft}`);
                     if(!previewDrafts && post.metadata.draft) {
                         return false;
                     }
