@@ -16,6 +16,9 @@
   color: var(--primary-color);
   /* Define default color of background across site */
   background-color: var(--background-color);  
+
+  /* root div will grow to the height of its children, avoids weird background color breaks */
+  overflow: auto;
 }
 
 a {
